@@ -1,0 +1,17 @@
+extends base
+block content 
+  p Hi #{firstName},
+  p You recently requested a password recovery. To recover your password, click the link below:
+  p #{url}
+  
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+    tbody
+      tr
+        td(align='left')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td
+                  a(href=`${url}`, target='_blank') Reset password
+  p If you don't do this then skip it.
+  p - Nguyen Phan Vu, CEO
